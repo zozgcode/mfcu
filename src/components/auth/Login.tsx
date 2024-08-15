@@ -36,16 +36,15 @@ export default function Login() {
   return (
     <div className="">
       <div className="h-screen bg-[white] p-4">
-        <div className="mt-3">
-          {error && (
-            <p className="text-[20px] text-center mx-auto max-w-[200px] rounded-md flex items-center justify-center text-red-600">
-              {error}
-            </p>
-          )}
-        </div>
-
         <div className="bg-white mx-auto rounded-xl max-w-[500px] py-7">
           <Header />
+          <div className="mt-3">
+            {error && (
+              <p className="text-[20px] text-center mx-auto max-w-[200px] rounded-md flex items-center justify-center text-red-600">
+                {error}
+              </p>
+            )}
+          </div>
           <form onSubmit={handleLogin} className="mt-5">
             <div className="flex flex-col gap-6 p-5">
               <div className="flex flex-col">
@@ -89,7 +88,9 @@ export default function Login() {
           <div className="border loginBottom mt-[20px] relative rounded-[20px] w-full min-h-[350px] overflow-hidden">
             <div className="absolute bottom-[30px] bg-white p-[10px_30px] w-full left-0 right-0">
               <p className="text-sm text-[#72253D]">Financial Exploration</p>
-              <p className="uppercase font-semibold text-[#002856]">Your Financial Guided Tour</p>
+              <p className="uppercase font-semibold text-[#002856]">
+                Your Financial Guided Tour
+              </p>
             </div>
           </div>
         </div>

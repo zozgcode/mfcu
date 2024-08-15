@@ -119,19 +119,7 @@ export default function Dashboard() {
           </div>
         </div>
         <TransactionHistory user={user} hideBalance={hideBalance} />
-        <div className="px-4 hidden">
-          <div className="border dashboardBottom mt-[20px] relative rounded-[20px] w-full min-h-[350px] overflow-hidden">
-            <div className="absolute bottom-[30px] bg-white p-[10px_30px] w-full left-0 right-0">
-              <p className="text-sm text-[#72253D]">Digital Banking</p>
-              <div className="flex items-center justify-between">
-                <p className="uppercase font-semibold text-[#002856]">
-                  Create new accounts online
-                </p>
-                <button className="">Get Started</button>
-              </div>
-            </div>
-          </div>
-        </div>
+       
       </div>
     </div>
   );
